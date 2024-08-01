@@ -8,6 +8,11 @@
  * Output: ["K","i","t","t","e","n"]
  */
 function stringToArray(input: string) {
+    const arr = [];
+    for (let i = 0; i < input.length; i++) {
+        arr.push(input[i]);
+    }
+    return arr; 
 }
 
 export { stringToArray };
