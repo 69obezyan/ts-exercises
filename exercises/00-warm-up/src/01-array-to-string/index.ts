@@ -11,7 +11,6 @@
 
 function arrayToString(input: string[]) {
     let output = "";
-    let lastIndex = input.length - 1;
     let isOnlyOneElement = input.length === 1;
     for (let i = 0; i < input.length; i++) {
         output += input[i];
