@@ -7,6 +7,14 @@
  * Output: true
  */
 
-function isQuestion(input: string) { }
+function isQuestion(input: string) { 
+    const lastLetter = input.length - 1;
+    // if(input[lastLetter] === '?') {
+    //     return true;
+    // } else{
+    //     return false;
+    // }
+    return input[lastLetter] === '?';
+}
 
 export { isQuestion };
