@@ -8,6 +8,14 @@
  * Output: true
  */
 
-function hasFriend(input: string[]) { }
+function hasFriend(input: string[]) {
+    const findIndex = input.findIndex(element => element === 'friend');
+    // if(findIndex >= 0) {
+    //     return true;
+    // } else{
+    //     return false;
+    // }
+    return findIndex >= 0;
+ }
 
 export { hasFriend };
