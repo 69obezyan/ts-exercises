@@ -9,6 +9,9 @@
  * Output: [1, 2, 3]
  */
 
-function divideAll(input: number[]) { }
+function divideAll(input: number[]) {
+    const divide = input.map(element => element / 2);
+    return divide;
+ }
 
 export { divideAll };
