@@ -7,6 +7,15 @@
  * Output: 1
  */
 
-function findTreasure(input: string[]) { }
+function findTreasure(input: string[]) {
+    // for (let i = 0; i < input.length; i++) {
+    //     if (input[i] === 'treasure') {
+    //         return i;
+    //     }
+
+    // }
+    // return -1;
+    return input.findIndex(element => element === 'treasure')
+}
 
 export { findTreasure };
