@@ -7,6 +7,14 @@
  * Output: ["apple", "apple"]
  */
 
-function filterApples(input: string[]) { }
+function filterApples(input: string[]) { 
+    const arr = [];
+    for (let i = 0; i < input.length; i++) {
+        if(input[i] === 'apple') {
+            arr.push(input[i]);
+        }
+    }
+    return arr;
+}
 
 export { filterApples };
