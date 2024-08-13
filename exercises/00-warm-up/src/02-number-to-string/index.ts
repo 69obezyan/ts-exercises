@@ -9,6 +9,7 @@
  */
 
 function numberToString(input: number) {
+    return input.toString();
  }
 
 export { numberToString };

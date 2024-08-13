@@ -9,6 +9,7 @@
  */
 
 function removeWhitespace(input: string) {
+    return input.trim();
  }
 
 export { removeWhitespace };
