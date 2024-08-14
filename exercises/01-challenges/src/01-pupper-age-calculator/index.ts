@@ -3,6 +3,8 @@
  * Return the result like so: "Your doggie is NN years old in dog years!"
  */
 
-function pupperAgeCalculator(age: number) { }
+function pupperAgeCalculator(age: number) {
+    return `Your doggie is ${age * 7} years old in dog years!`
+ }
 
 export { pupperAgeCalculator };
