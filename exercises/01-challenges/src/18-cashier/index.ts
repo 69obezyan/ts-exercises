@@ -4,7 +4,16 @@
  * A grocery object has a product, a quantity and a price.
  */
 
-function cashier(groceries: Grocery[]) { }
+function cashier(groceries: Grocery[]) {
+    let totalPrice = 0;
+    for (let i = 0; i < groceries.length; i++) {
+        totalPrice += groceries[i].price * groceries[i].quantity;
+
+    
+    }
+    return totalPrice;
+
+ }
 
 export { cashier };
 
