@@ -8,6 +8,27 @@
  * S stands for Scissors
  */
 
-function rockPaperScissors(games: string[][]) { }
+function rockPaperScissors(games: string[][]) {
+    let abigailWins = 0;
+    let bensonWins = 0;
+    for (let i = 0; i < games.length; i++) {
+        let abigailPick = games[i][0];
+        let bensonPick = games[i][1];
+        if ((abigailPick === 'R' && bensonPick === 'S') || (abigailPick === 'S' && bensonPick === 'P') || (abigailPick === 'P' && bensonPick === 'R')) {
+            abigailWins++;
+        } else if (abigailPick !== bensonPick) {
+            bensonWins++;
+        }
+    }
+    if (abigailWins > bensonWins) {
+        return 'Abigail';
+    } else if (abigailWins === bensonWins) {
+        return 'Tie!';
+    } else {
+        return 'Benson';
+    }
+}
+
+
 
 export { rockPaperScissors };
