@@ -3,7 +3,16 @@
  * Create the function that takes an array with objects and returns the sum of people's budgets.
  */
 
-function vacationBudget(family: Person[]) { }
+function vacationBudget(family: Person[]) { 
+    let totalBudget = 0;
+
+    for (let i = 0; i < family.length; i++) {
+        totalBudget += family[i].budget;
+    }
+
+    return totalBudget;
+}
+
 
 export { vacationBudget };
 
