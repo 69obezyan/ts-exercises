@@ -19,6 +19,19 @@
 ]
  */
 
-function peelTheOnion(onion: (string | number)[][]) { }
+function peelTheOnion(onion: (string | number)[][]): (string | number)[][] {
+  // Check if the onion has at least 3 rows and 3 columns
+  if (onion.length < 3 || onion[0].length < 3) {
+    return [];
+  }
+
+  // Remove the first and last rows
+  const innerRows = onion.slice(1, -1);
+
+  // Remove the first and last elements from each remaining row
+  const peeledOnion = innerRows.map(row => row.slice(1, -1));
+
+  return peeledOnion;
+}
 
 export { peelTheOnion };
