@@ -8,8 +8,6 @@ function burglary(input: any) {
     if (Object.keys(input).length === 0) {
         return "Lucky you!";
     }
-
-    // Calculate the total value of the stolen items
     let totalValue = 0;
     for (let item in input) {
         if (input.hasOwnProperty(item)) {

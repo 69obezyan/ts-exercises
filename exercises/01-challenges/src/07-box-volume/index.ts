@@ -11,6 +11,16 @@
  * Output: 266
  */
 
-function boxVolume(boxes: number[][]) { }
+function boxVolume(boxes: number[][]) { 
+    let totalVolume = 0;
+
+    for (let i = 0; i < boxes.length; i++) {
+        const [length, width, height] = boxes[i];
+        const boxVolume = length * width * height;
+        totalVolume += boxVolume;
+    }
+
+    return totalVolume;
+}
 
 export { boxVolume };
