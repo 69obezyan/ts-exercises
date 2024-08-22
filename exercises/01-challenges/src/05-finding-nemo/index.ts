@@ -4,6 +4,15 @@
  * If you can't find Nemo, return "I can't find Nemo :(".
  */
 
-function findingNemo(input: string) { }
+function findingNemo(input: string): string {
+    const words = input.split(' ');
+    const findNemo = words.indexOf('Nemo');
+ 
+    if (findNemo !== -1) {
+        return `I found Nemo at ${findNemo}!`;
+    } else {
+        return `I can't find Nemo :(`;
+    }
+}
 
 export { findingNemo };
