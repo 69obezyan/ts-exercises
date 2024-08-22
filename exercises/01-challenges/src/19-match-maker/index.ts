@@ -5,6 +5,17 @@
  * If the array sizes don't match, return "Cupid is on vacation"
  */
 
-function matchMaker(women: string[], men: string[]) { }
+function matchMaker(women: string[], men: string[]) { 
+    if (women.length != men.length) {
+        return 'Cupid is on vacation';
+    }
+
+    let pairs: [string, string][] = [];
+    for (let i = 0; i < women.length; i++) {
+        pairs.push([women[i], men[i]]);  
+    }
+    
+    return pairs;
+}
 
 export { matchMaker };
