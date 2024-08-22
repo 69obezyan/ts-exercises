@@ -7,6 +7,25 @@
  * If both groups are equal, return "There are no winners"
  */
 
-function warOfNumbers(numbers: number[]) { }
+function warOfNumbers(numbers: number[]) {
+    let evenSum = 0;
+    let oddSum = 0;
+
+    for (let num of numbers) {
+        if (num % 2 === 0) {
+            evenSum += num;
+        } else {
+            oddSum += num;
+        }
+    }
+
+    if (evenSum > oddSum) {
+        return `Even numbers win by ${evenSum - oddSum}`;
+    } else if (oddSum > evenSum) {
+        return `Odd numbers win by ${oddSum - evenSum}`;
+    } else {
+        return "There are no winners";
+    }
+ }
 
 export { warOfNumbers };
