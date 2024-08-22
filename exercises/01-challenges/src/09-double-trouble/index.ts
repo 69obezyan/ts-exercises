@@ -5,6 +5,18 @@
  * returns a new array in the same sequential order as the old array (minus duplicates).
  */
 
-function doubleTrouble(list: string[]) { }
+function doubleTrouble(list: string[]) {
+    const uniqueNames = [];
+    const seenNames = new Set();
+
+    for (let name of list) {
+        if (!seenNames.has(name)) {
+            seenNames.add(name);
+            uniqueNames.push(name);
+        }
+    }
+
+    return uniqueNames;
+}
 
 export { doubleTrouble };

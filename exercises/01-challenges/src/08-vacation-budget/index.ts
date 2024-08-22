@@ -9,7 +9,7 @@ function vacationBudget(family: Person[]) {
     for (let i = 0; i < family.length; i++) {
         totalBudget += family[i].budget;
     }
-
+    
     return totalBudget;
 }
 
